@@ -1,0 +1,22 @@
+{
+    "name": "Python 3.6.3 Project",
+    "build": {
+      "dockerfile": "Dockerfile",
+      # Update the 'context' to use when building the Dockerfile
+      "context": "..",
+    },
+    "settings": { 
+      // List of extensions to be installed
+      "extensions": [
+        "ms-python.python"
+      ]
+    },
+    // Open port 5000 when the container starts (if your app uses this port)
+    "forwardPorts": [5000],
+    // Set *default* container specific settings.json values
+    "settings": { 
+      "python.pythonPath": "/usr/local/bin/python",
+      "python.defaultInterpreterPath": "/usr/local/bin/python"
+    },
+  }
+  
